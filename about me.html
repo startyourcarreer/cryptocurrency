@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+body, html {
+margin: 0;
+padding: 0;
+font-family: 'Arial', sans-serif;
+background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+height: 100%;
+}
+
+.header {
+background-color: #333;
+padding: 10px 0;
+text-align: center;
+}
+
+.navbar a {
+color: white;
+padding: 14px 20px;
+text-decoration: none;
+text-align: center;
+}
+
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.navbar a.active {
+background-color: #4CAF50;
+color: white;
+}
+
+.about-me-page {
+background-image: url('hb1.jpg');
+background-size: cover;
+background-position: center;
+height: calc(100vh - 60px); /* Full viewport height minus header height */
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+.about-me-content {
+background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+}
+
+h1 {
+font-size: 2.5em;
+margin-bottom: 20px;
+color: #ffeb3b; /* Bright yellow color */
+}
+
+p {
+font-size: 1.2em;
+margin: 10px 0;
+}
+
+.footer-section {
+background-color: #333; /* Dark background color */
+color: white;
+padding: 20px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 100px; /* Adjust height as needed */
+}
+
+.footer-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer-content button {
+background-color: #4CAF50; /* Green background */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+margin: 5px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.footer-content button:hover {
+background-color: #45a049; /* Darker green on hover */
+}
+
+.centered-text {
+margin: 10px 0;
+color: white; /* Text color */
+}
+
+@media (max-width: 768px) {
+.about-me-content {
+padding: 20px;
+}
+
+h1 {
+font-size: 2em;
+}
+
+p {
+font-size: 1em;
+}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="about.html" class="active">About Me</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<div class="about-me-page">
+<div class="about-me-content">
+<h1>About Me</h1>
+<p><strong>Address:</strong> Your Address Here</p>
+<p><strong>Education:</strong> Your Education Details Here</p>
+</div>
+</div>
+<footer class="footer-section">
+<div class="footer-content">
+<button onclick="location.href='#copyright'">Copyright</button>
+<p class="centered-text">This is a styled sentence. © 2024 Arman. All rights reserved.</p>
+<button onclick="location.href='#privacy-policy'">Privacy Policy</button>
+</div>
+</footer>
+</body>
+</html>
